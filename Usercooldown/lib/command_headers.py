@@ -83,7 +83,7 @@ commands = {
         'argc': 3,
         'return': 'command',
         'ul': 'mod',
-        'usage': "!gift [username] [Pokemon_name/'item'] [starting_level/'item_number']"
+        'usage': "!gift [username] [item] [item_number]"
     },
     '!nickname': {
         'limit': 0,
@@ -98,24 +98,12 @@ commands = {
         'space_case': True,
         'usage': '!popularity [name_of_game]'
     },
-    '!trade': {
-        'limit': 0,
-        'argc': 3,
-        'return': 'command',
-        'usage': "!trade [party_position] [requested_pokemon] [minimum_asking_level]"
-    },
     '!check': {
         'limit': 10,
         'argc': 1,
         'return': 'command',
         'usage': "!check ['trades'/'market'/'items'/'inventory'/username]",
         'user_limit': 30
-    },
-    '!use': {
-        'limit': 0,
-        'argc': 2,
-        'return': 'command',
-        'usage': '!use [item_position] [party_position]'
     },
     '!leaderboard': {
         'limit': 300,
