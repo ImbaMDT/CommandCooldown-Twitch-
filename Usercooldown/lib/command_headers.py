@@ -213,11 +213,6 @@ def initalize_commands_after_runtime(channel):
                 user_cooldowns["channels"][channel]["commands"][command] = {
                     "users": {}}
         channel = channel.lstrip('#')
-        pokemon_init_dict = {'caught': True, 'pokemon': ""}
-        if channel not in globals.CHANNEL_INFO:
-            globals.CHANNEL_INFO[channel] = pokemon_init_dict
-        else:
-            globals.CHANNEL_INFO[channel].update(pokemon_init_dict)
 
 
 def deinitialize_commands_after_runtime(channel):
